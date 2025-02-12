@@ -6,6 +6,19 @@ main h1, h5{
     text-align: center;
 }
 
+#mennav-titulo-voltar{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#botao-voltar img{
+    height: 0%;
+    width: 70%;
+    align-self: center;
+}
+
 #caixa-imagens-pai{
     display: flex;
     flex-direction: column;
