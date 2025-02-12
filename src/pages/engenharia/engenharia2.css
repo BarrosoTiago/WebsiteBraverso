@@ -1,6 +1,6 @@
 
 #section-1{
-    margin: 20px;
+    margin: 3%;
     padding: 10px;
 }
 
@@ -31,6 +31,8 @@
 .caixa-foguete{
     justify-self: center;
     text-align: center;
+    justify-items: center;
+    justify-content: center;
 }
 
 
@@ -78,6 +80,7 @@
         display: flex;
         max-width: max-content;
         flex-direction: row-reverse;
+        margin-bottom: 12%;
     }
 
     .caixa-foguete{
