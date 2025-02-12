@@ -4,7 +4,6 @@
 .menu-navegacao{
     grid-row: 3;
     justify-self: center;
-    margin-top: 25px;
 }
 
 
@@ -13,7 +12,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    gap: 15px;
+    gap: 10px;
     font-size: 35px;
     
 }
@@ -22,7 +21,7 @@
 
 #mennav-caixa h2{
     font-family: Koulen;
-    font-size: 30px;
+    font-size: max(10px, 2vw);
 }
 
 
@@ -35,29 +34,60 @@
 }
 
 
+.mennav-link{
+    display: flex;
+    align-items: center;
+}
+
+.mennav-link:hover{
+    cursor: pointer;
+}
 
 .mennav-link .mennav-link-btn{
     margin: 3px;
 }
 
+.mennav-link-btn:hover{
+    cursor: pointer;
+}
 
+.mennav-caixa-texto-imagem{
+    display: flex;
+}
 
-#mennav-link{
-    position: relative;
+.mennav-caixa-texto-imagem img{
+    align-self: center;
+    width: auto;
+    height: 25%;
+    margin: 2%;
 }
 
 #menu-dropdown-missao{
     display: none;
     flex-flow: column;
+    background-color: rgb(20, 20, 20);
     column-gap: 20px;
-    gap: 10px;
+    gap: 14px;
     position: absolute;
     font-family: Arial;
     font-size: 15px;
+    padding: 8px;
 }
-
 
 
 .mennav-link:hover #menu-dropdown-missao{
     display: flex;
 }
+
+.link-to-missao:hover{
+    background-color: rgb(13, 13, 13);
+    transform: scale(1.2);
+}
+
+@media(max-width: 320px){ /* pequenos celulares */
+    .mennav-link, .span-divisor{
+        display: none;
+    }
+}
+
+
