@@ -1,9 +1,0 @@
-#section-1{
-    margin: 20px;
-    padding: 10px;
-}
-
-#caixa-info{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
