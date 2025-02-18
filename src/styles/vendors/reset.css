@@ -1,0 +1,7 @@
+/* a pasta vendors é usada para guardar arquivos com códigos de terceiros */
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,189 @@
+
+body{
+    font-family: Koulen, serif;
+    font-weight: 400;
+    background-image: url(../../assets/images/IMAGEM\ DE\ FUNDO.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+
+nav{
+    margin: 20px 10px;
+    height: 10vh;
+}
+
+#caixa-parceiros{
+    display: flex;
+    justify-content: end;
+    height: 5vh;
+}
+
+#caixa-logo{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 130px;
+}
+
+
+#braverso-logo{
+    width: 60%;
+    height: 100%;
+}
+
+
+#caixa-form{
+    margin: 120px 0px;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    color: white;
+}
+
+
+.input-group{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+input{
+    width: 70%;
+    height: 3vh;
+    padding: 0px 40px 0px 40px;
+    border-radius: 15px;
+    border: 0.5px solid black;
+}
+
+
+#botao-confirmar{
+    cursor: pointer;
+    justify-self: center;
+    width: 40%;
+    padding: 0px 40px;
+    height: 4vh;
+    align-self: center;
+    background-color: black;
+    border: 0.5px solid white;
+    border-radius: 15px;
+    color: white;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    bottom: 0;
+}
+
+
+@media(min-width: 1024px) and (max-width: 1424px){
+
+    #caixa-parceiros{
+        height: 8vh;
+    }
+
+    #caixa-logo{
+        margin-top: 120px;
+
+    }
+
+    #braverso-logo{
+        width: 50%;
+        height: 100%;
+    }
+
+    input{
+        width: 60%;
+    }
+}
+
+
+@media(min-width: 1424px) and (max-width: 1664px){
+
+    #caixa-logo{
+        margin-top: 120px;
+    }
+
+    #braverso-logo{
+        width: 40%;
+        height: 100%;
+    }
+
+    input{
+        width: 50%;
+    }
+
+}
+
+@media(min-width: 1664px) and (max-width: 1904px){
+
+    #caixa-logo{
+        margin-top: 120px;
+    }
+
+    #braverso-logo{
+        width: 45%;
+        height: 12vh;
+    }
+
+    #botao-confirmar{
+        width: 20%;
+    }
+
+    input{
+        width: 50%;
+    }
+
+}
+
+@media(min-width: 1904px){
+
+    #caixa-logo{
+        margin-top: 120px;
+    }
+
+    #braverso-logo{
+        width: 45%;
+        height: 12vh;
+    }
+
+    #botao-confirmar{
+        width: 20%
+    }
+
+    input{
+        width: 40%;
+    }
+}
+
+@media(min-width: 2560px){
+
+    #caixa-logo{
+        margin-top: 120px;
+    }
+
+    #braverso-logo{
+        width: 45%;
+        height: 12vh;
+    }
+
+    #botao-confirmar{
+        width: 20%
+    }
+
+    input{
+        width: 30%;
+    }
+}
+
+

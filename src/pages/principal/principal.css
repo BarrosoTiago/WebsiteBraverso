@@ -1,0 +1,133 @@
+*{
+    max-height: 100%;
+}
+
+body{
+    background-image: url(../../assets/images/lua.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 80%;
+    background-size: 50%;
+}
+
+
+
+button{
+    background: none;
+    border: none;
+}
+
+
+
+main{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+
+#caixa-superior{
+    display: grid;
+    margin-top: 10px;
+    margin-right: 10px;
+    justify-content: end;
+    gap: 10px;
+}
+
+
+
+#caixa-user-img{
+    display: flex;
+    grid-row: 1;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+
+
+#menu-superior{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    grid-row: 2;
+    justify-items: end;
+}
+
+
+.link-botao{
+    height: fit-content;
+    align-self: center;
+}
+
+
+#usuario-link-botao{
+    display: inline-block;
+}
+
+
+
+#usuario-link-botao .icone-usuario-link-botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+#loja-link-botao .icone-usuario-link-botao, #info-link-botao .icone-usuario-link-botao{
+    cursor: pointer;
+}
+
+
+
+#logo-braverso{
+    width: 40%;
+    height: 70%;
+}
+
+
+#bandeira-brasileira{
+    width: 20%;
+    height: 50%;
+    align-self: center;
+}
+
+
+
+
+
+
+@media (min-width: 1024px){ /* ipad */
+    .menu-navegacao{
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 1400px){ /* laptop */
+    body{
+        background-size: 30%;
+    }
+
+    #bandeira-brasileira{
+        width: 20%;
+        height: 35%;
+    }
+}
+
+@media (min-width: 1600px){ /* desktop */
+    body{
+        background-size: 30%;
+    }
+    .menu-navegacao{
+        margin-top: 120px;
+    }
+
+    #menu-superior{
+        gap: 10px;
+    }
+
+}
+
+

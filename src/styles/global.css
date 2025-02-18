@@ -1,0 +1,21 @@
+/* a pasta styles é usada para guardar arquivos com códigos css */
+/* o arquivo global.css é usado para guardar css com parametros para todos os sites */
+
+body{
+    font-family: Koulen, serif;
+    font-weight: 400;
+    background-color: black;
+    overflow-x: hidden;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+button{
+    background: none;
+    border: none;
+    color: white;
+}

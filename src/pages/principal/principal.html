@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../assets/images/dark-logo.png">
+    <link rel="stylesheet" href="../../styles/vendors/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/components/navegacao.css">
+    <link rel="stylesheet" href="principal.css">
+    <title>Braverso - BEM-VINDO!</title>
+</head>
+<body>
+
+    <main >
+        <div id="caixa-superior">
+            <div id="caixa-user-img">
+                <img id="bandeira-brasileira" src="../../assets/images/bandeira-brasileira.png" alt="">
+                <img id="logo-braverso" src="../../assets/images/light-logo-inteira.png" alt="">
+                <a id="usuario-link-botao" class="link-botao" href="../../pages/sobre/sobre.html"><button><img class="icone-usuario-link-botao" src="../../assets/images/user-icon-1.png" alt=""></button></a>
+            </div>
+            <nav id="menu-superior">
+                <a id="loja-link-botao" class="link-botao" href="../../pages/vendas/vendas.html"><button><img class="icone-usuario-link-botao" src="../../assets/images/adicionar-produto 1.png" alt=""></button></a>
+                <a id="info-link-botao" class="link-botao" href="../../pages/guia/guia.html"><button><img class="icone-usuario-link-botao" src="../../assets/images/info 1.png" alt=""></button></a>
+            </nav>
+        </div>
+
+        <nav class="menu-navegacao">
+            <div id="mennav-caixa">
+                <h2>TELA INICIAL</h2>
+
+                <span class="span-divisor">|</span>
+                <div>
+                    <div class="mennav-link" id="mennav-link-to-missao">
+                        <button class="mennav-link-btn">Missão</button>
+                        <img src="../../assets/images/dropdown.png" alt="">
+                        <div class="menu-dropdown" id="menu-dropdown-missao">
+                            <a href="../missaodpedro/missaodpedro.html" id="link-to-missao-1" class="link-to-missao">Missão 1</a>
+                            <a href="../missaoisabel/missaoisabel.html" id="link-to-missao-2" class="link-to-missao">Missão 2</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <span class="span-divisor">|</span>
+
+                <a href="../engenharia/engenharia.html" class="mennav-link" id="mennav-link-to-engenharia"><button class="mennav-link-btn">Engenharia</button><img src="../../assets/images/dropdown.png" alt=""></a>
+
+                <span class="span-divisor">|</span>
+
+                <a href="../sobre/sobre.html" class="mennav-link" id="mennav-link-to-sobre"><button class="mennav-link-btn">Sobre</button><img src="../../assets/images/dropdown.png" alt=""></a>
+            </div>
+        </nav>
+    </main>
+
+
+    <script src="principal.js"></script>
+</body>
+</html>

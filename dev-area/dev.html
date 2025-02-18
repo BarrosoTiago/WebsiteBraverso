@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Hover</title>
+    <style>
+        /* Estilizando o container do menu */
+        .menu-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Botão do menu */
+        .menu-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        /* Dropdown (inicialmente escondido) */
+        .menu-dropdown {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 150px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        /* Estilo dos itens do menu */
+        .menu-dropdown a {
+            display: block;
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .menu-dropdown a:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Exibe o menu ao passar o mouse */
+        .menu-container:hover .menu-dropdown {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-container">
+        <button class="menu-button">Menu</button>
+        <div class="menu-dropdown">
+            <a href="#">Opção 1</a>
+            <a href="#">Opção 2</a>
+            <a href="#">Opção 3</a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.addEventListener("click", function (event) {
+                const menuContainer = document.querySelector(".menu-container");
+                const dropdown = document.querySelector(".menu-dropdown");
+    
+                if (!menuContainer.contains(event.target)) {
+                    dropdown.style.display = "none";
+                } else {
+                    dropdown.style.display = "block";
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>
+
+</body>
+</html>

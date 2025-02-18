@@ -1,0 +1,75 @@
+body{
+    background-color: black;
+    color: white;
+    
+    }
+    .menu{
+        font-size: 20px;
+        display: flex;
+        gap: 100px;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    .menu-item{
+    
+    }
+    .menu-item:hover{
+        color: rgb(159, 154, 163);
+    }
+    .guia-website-titulo-seta{
+        display: flex;
+        align-items: center;
+        margin-left: 750px;
+    }
+    .guia-website-seta{
+        padding: 50px;
+    }
+    .guia-website-seta:hover{
+        
+    }
+    .guia-website{
+        margin-top: 250px;
+    }
+    .guia-website-image{
+        width: 600px;
+        height: 400px;
+        background-color: aqua;
+        margin-right: 200px;
+    }
+    .guia-website-principal{
+        margin-top: 200px;
+    }
+    .conteudo-principal-titulo{
+        display: grid;
+    }
+    .guia-website-titulo{
+        text-align: center;
+    }
+    .guia-website-escrito{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 300px;
+    }
+    .conteudo-image{
+        width: 50px;
+        height: 3px;
+    }
+    .guia-website-texto{
+        margin-left: 200px;
+        font-size: 25px;
+    }
+    .conteudo-texto-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 300px;
+    }
+    .conteudo-texto-3{
+        justify-content: space-around;
+        font-size: 25px;
+        margin-right: 100px;
+    }
+    .foto-macaco{
+        margin-top: 560px;
+        margin-left: 200px;
+        width: 300px;
+    }
