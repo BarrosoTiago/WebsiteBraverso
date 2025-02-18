@@ -1,0 +1,58 @@
+main{
+    margin-top: 5%;
+}
+
+main h1, h5{
+    text-align: center;
+}
+
+#caixa-imagens-pai{
+    margin-top: 15%;
+    gap: 20px;
+}
+
+.caixa-imagens{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 10px;
+    font-size: small;
+}
+
+.caixa-imagens img{
+    width: 60%;
+    height: 20%;
+}
+
+#info-paragrafo{
+    margin-top: 5%;
+    text-align: center;
+    padding: 25px;
+    font-size: medium;
+}
+
+
+#caixa-imagens-astronautas{
+    margin-top: 15%;
+    margin-bottom: 15%;
+    padding: 0px 30px 0px 30px;
+    display: flex;
+    font-size: small;
+    text-align: center;
+}
+
+#caixa-imagens-astronautas img{
+    width: 60%;
+    height: 60%;
+}
+
+
+footer{
+    padding: 20px;
+}
+
+footer img{
+    width: 20%;
+    height: 5%;
+    margin-left: 5%;
+}
