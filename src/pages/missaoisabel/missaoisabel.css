@@ -1,0 +1,130 @@
+main{
+    margin-top: 5%;
+}
+
+main h1, h5{
+    text-align: center;
+}
+
+#caixa-imagens-pai{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+    gap: 20px;
+}
+
+.caixa-imagens{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 10px;
+    font-size: small;
+}
+
+.caixa-imagens img{
+    width: 60%;
+    height: 20%;
+}
+
+#info-paragrafo{
+    display: block;
+    text-align: center;
+    text-justify: distribute;
+    font-size: medium;
+    margin: 15px;
+    margin-top: 10%;
+    line-height: 40px;
+}
+
+
+#video-missao{
+    margin: 15%;
+    margin-top: 30%;
+    justify-self: center;
+}
+
+#video-missao video{
+    max-width: 1100px;
+}
+
+#caixa-imagens-astronautas{
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    padding: 0px 30px 0px 30px;
+    display: flex;
+    font-size: small;
+    text-align: center;
+}
+
+#caixa-imagens-astronautas img{
+    width: 60%;
+    height: 60%;
+    margin-bottom: 10px;
+}
+
+
+footer{
+    padding: 20px;
+}
+
+footer img{
+    width: 20%;
+    height: 5%;
+    margin-left: 5%;
+}
+
+@media (min-width: 800px){ /* ipad */
+
+    main h1{
+        font-size: 50px;
+    }
+
+    #caixa-imagens-pai{
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 6%;
+        gap: 60px;
+    }
+
+    .caixa-imagens img{
+        width: 100%;
+        height: 100%;
+    }
+
+    #info-paragrafo{
+        margin: 120px;
+        font-size: x-large;
+    }
+    #caixa-imagens-astronautas img{
+        width: 80%;
+        height: 80%;
+    }
+
+
+    #video-missao{
+        margin: 10%;
+        justify-self: center;
+    }
+
+    #caixa-imagens-astronautas{
+        margin: 5%;
+        margin-bottom: 10%;
+    }
+
+    #caixa-imagens-astronautas p{
+        margin: 5px 5px 5px 5px;
+    }
+}
+
+@media (min-width: 1400px){ /* laptop */
+
+    /* o css se ajusta automaticamente a esta resolução */
+
+}
+
+@media (min-width: 1600px){ /* desktop */
+
+    /* o css se ajusta automaticamente a esta resolução */
+}
