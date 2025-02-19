@@ -94,16 +94,21 @@ body{
     .guia-website-texto{
         margin-left: 200px;
         font-size: 25px;
+        font-family: Kosugi Maru, serif;
     }
     .conteudo-texto-2{
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-top: 300px;
+        font-family: Kosugi Maru, serif;
+
     }
     .conteudo-texto-3{
         justify-content: space-around;
         font-size: 25px;
         margin-right: 100px;
+        font-family: Kosugi Maru, serif;
+
     }
     .foto-macaco{
         margin-top: 560px;
