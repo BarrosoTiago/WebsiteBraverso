@@ -7,11 +7,8 @@ main h1, h5{
 }
 
 #caixa-imagens-pai{
-<<<<<<< HEAD
-=======
     display: flex;
     flex-direction: column;
->>>>>>> f942080 (alteração em  missaodpedro.html e missaoisabel.html)
     margin-top: 15%;
     gap: 20px;
 }
@@ -30,16 +27,6 @@ main h1, h5{
 }
 
 #info-paragrafo{
-<<<<<<< HEAD
-    margin-top: 5%;
-    text-align: center;
-    padding: 25px;
-    font-size: medium;
-}
-
-
-#caixa-imagens-astronautas{
-=======
     display: block;
     text-align: center;
     text-justify: distribute;
@@ -63,7 +50,6 @@ main h1, h5{
 #caixa-imagens-astronautas{
     justify-content: center;
     align-items: center;
->>>>>>> f942080 (alteração em  missaodpedro.html e missaoisabel.html)
     margin-top: 15%;
     margin-bottom: 15%;
     padding: 0px 30px 0px 30px;
@@ -75,10 +61,7 @@ main h1, h5{
 #caixa-imagens-astronautas img{
     width: 60%;
     height: 60%;
-<<<<<<< HEAD
-=======
     margin-bottom: 10px;
->>>>>>> f942080 (alteração em  missaodpedro.html e missaoisabel.html)
 }
 
 
@@ -90,8 +73,6 @@ footer img{
     width: 20%;
     height: 5%;
     margin-left: 5%;
-<<<<<<< HEAD
-=======
 }
 
 @media (min-width: 800px){ /* ipad */
@@ -144,5 +125,4 @@ footer img{
 
 @media (min-width: 1600px){ /* desktop */
 
->>>>>>> f942080 (alteração em  missaodpedro.html e missaoisabel.html)
 }
