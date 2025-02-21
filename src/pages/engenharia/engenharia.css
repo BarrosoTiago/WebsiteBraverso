@@ -7,3 +7,43 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+.menu-navegacao #mennav-caixa{
+    font-size: 22px;
+    gap: 2px;
+}
+
+#mennav-caixa .mennav-link{
+    padding: 5px;
+}
+
+
+
+#botao-voltar img{
+    width: 70%;
+    height: 70%;
+}
+
+#mennav-caixa h2{
+    font-size: large;
+}
+
+.caixa-foguete{
+    justify-self: center;
+    text-align: center;
+}
+
+#caixa-info{
+    display: flex;
+}
+
+.caixa-texto{
+    justify-self: center;
+    text-align: center;
+    margin: 10px;
+}
+
+.caixa-texto li{
+    list-style: none;
+}
+
