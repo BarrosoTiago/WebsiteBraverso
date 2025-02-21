@@ -2,7 +2,7 @@ body {
     background-color: black;
 }
 
-.item {
+#item-titulo {
     color: white;
     display: flex;
     justify-content: center;
@@ -17,15 +17,14 @@ body {
 
 .imagens {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
-    justify-content: center;
-    align-items: center;
     margin-top: 10%;
     
 }
 
 .imagens img {
-    width: 150px;
+    width: 40%;
     height: auto;
 }
 
@@ -34,7 +33,6 @@ body {
     height: 30px;
     stroke: rgb(250, 248, 248);
     stroke-width: 1.5;
-    margin-left: 10%;
     margin-top: 2%;
 }
 
@@ -44,4 +42,69 @@ body {
     stroke: rgb(250, 248, 248);
     stroke-width: 1.5;
     margin-left: 80%;
+}
+
+
+.item{
+    object-fit: cover;
+}
+
+@media(min-width:800px){
+    body {
+        background-color: black;
+    }
+    
+    #item-titulo {
+        color: white;
+        display: flex;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+    }
+    
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .imagens {
+        display: flex;
+        gap: 10px;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+        
+    }
+    
+    .imagens img {
+        width:15%;
+        height: auto;
+    }
+    
+    .icon {
+        width: 30px;
+        height: 30px;
+        stroke: rgb(250, 248, 248);
+        stroke-width: 1.5;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+    
+    .icon2 {
+        width: 30px;
+        height: 30px;
+        stroke: rgb(250, 248, 248);
+        stroke-width: 1.5;
+        margin-left: 80%;
+    }
+    
+    .item{
+        object-fit: cover;
+    }
+    
+    .item:hover{
+        transition: transform 0.08s ease-in;
+        transform: scale(1.2);
+    }
 }
