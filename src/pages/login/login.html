@@ -26,21 +26,97 @@
                 <img src="../../assets/images/light-logo-inteira.png" id="braverso-logo" alt="">
             </div>
         </header>
-        <div id="caixa-form">
-            <h1>LOGIN</h1>
+        <form id="caixa-form">
+            <h1>LOGIN / REGISTRO</h1>
             <div class="input-group">
-                <input type="email" placeholder="Digite seu e-mail" id="input-email">
+                <input type="text" placeholder="Digite seu nome" id="input-nome" class="required" oninput="nameValidate()">
+                <span class="spans-required">seu nome de usuário deve ter, no mínimo, 3 caracteres</span>
             </div>
             <div class="input-group">
-                <input type="password" placeholder="Digite sua senha" id="input-senha">
+                <input type="email" placeholder="Digite seu e-mail" id="input-email" class="required" oninput="emailValidate()">
+                <span class="spans-required">apenas letras e números são aceitos. formato: usuario@gmail.com</span>
             </div>
-            <a href="/Projetos/Braverso/src/pages/principal/principal.html" id="botao-confirmar-link"><button id="botao-confirmar">ACESSAR</button></a>
-        </div>
+            <div class="input-group">
+                <input type="password" placeholder="Digite sua senha" id="input-senha" class="required" oninput="passwordValidate()">
+                <span class="spans-required">sua senha deve ter no mínimo 8 caracteres</span>
+            </div>
+            <button type="submit" id="botao-confirmar">ACESSAR</button>
+        </form>
+        <p style="text-align: center;">você será registrado automaticamente após seu primeiro login. digite suas credenciais com cuidado.</p>
         <footer>
             <a href="https://www.instagram.com" target="_blank"><img src="/assets/images/instagram.svg" alt=""></a>
             <a href="https://www.facebook.com" target="_blank"><img src="/assets/images/facebook-white.svg" alt=""></a>
             <a href="https://www.youtube.com" target="_blank"><img src="/assets/images/youtube.svg" alt=""></a>
         </footer>
     </main>
+
+    <script>
+        const form = document.getElementById('caixa-form');
+        const campos = document.querySelectorAll('.required');
+        const spans = document.querySelectorAll('.spans-required');
+        const emailRegex = /^[^\s]+@[^\s]+\.[^\s]+$/;
+
+        form.addEventListener('submit', (event) =>{
+            event.preventDefault();
+
+            var numero = 0
+            const textovalido = nameValidate(numero);
+            const emailvalido = emailValidate(numero);
+            const senhavalida = passwordValidate(numero);
+            if(textovalido+emailvalido+senhavalida === 3){
+                console.log(textovalido.value)
+                window.location='../principal/principal.html';
+            }else{
+                alert('Erro! Digite todas as suas credenciais corretamente para entrar.')
+            }
+        });
+
+        function setError(index){
+            campos[index].style.border = '3.5px solid rgb(206, 12, 12)';
+            spans[index].style.display = 'block';
+        }
+
+        function removeError(index){
+            campos[index].style.border = '3.5px solid rgb(0, 168, 0)';
+            spans[index].style.display = 'none';
+        }
+
+        function nameValidate(numero){
+            if(campos[0].value.length < 3){
+                setError(0);
+                return
+                
+            } else{
+                removeError(0);
+            }
+
+            return numero = numero+1
+        }
+
+
+        function emailValidate(numero){
+            if(!emailRegex.test(campos[1].value)){
+                setError(1);
+                return
+            } else{
+                removeError(1);
+            }
+
+            return numero = numero+1
+        }
+
+        function passwordValidate(numero){
+            if(campos[2].value.length < 8){
+                setError(2);
+                return
+                
+            } else{
+                removeError(2);
+            }
+
+            return numero = numero+1
+        }
+
+    </script>
 </body>
 </html>
