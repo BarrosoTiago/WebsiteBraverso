@@ -127,6 +127,55 @@ footer{
     margin-bottom: 5%;
 }
 
+@keyframes fadeIn { /* animação */
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn { /* animação */
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.mennav-link-btn { /* animação */
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+
+.image img { /* animação */
+    transition: transform 0.5s ease-in-out, opacity 0.5s;
+}
+
+.image img:hover { /* animação */
+    transform: scale(1.05) rotate(2deg);
+    opacity: 0.9;
+}
+.text { /* animação */
+    animation: fadeIn 6.5s ease-in-out;
+}
+
+.menu-navegacao { /* animação */
+    animation: slideIn 1s ease-in-out;
+}
+
+.caixa-footer { /* animção */
+    animation:  slideIn 7.5s ease-in-out;
+
+}
+
+
 
 @media(min-width: 430px){
     .image img{
