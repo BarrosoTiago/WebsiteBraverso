@@ -1,133 +1,175 @@
 *{
-    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
-    background-image: url(../../assets/images/lua.gif);
+    font-family: 'Koulen', sans-serif;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../assets/images/lua.gif);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: right;
-    background-position-x: 80%;
-    background-size: 50%;
+    background-position: center;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
 }
-
-
 
 button{
     background: none;
     border: none;
+    cursor: pointer;
 }
 
-
-
-main{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
-
-
+/* Estilos para o cabeçalho */
 #caixa-superior{
-    display: grid;
-    margin-top: 10px;
-    margin-right: 10px;
-    justify-content: end;
-    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
 }
-
-
 
 #caixa-user-img{
     display: flex;
-    grid-row: 1;
-    justify-content: flex-end;
+    align-items: center;
     gap: 20px;
 }
 
+#bandeira-brasileira {
+    width: 50px;
+    height: auto;
+}
 
+#logo-braverso {
+    width: 150px;
+    height: auto;
+}
 
 #menu-superior{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
     gap: 20px;
-    grid-row: 2;
-    justify-items: end;
 }
 
-
-.link-botao{
-    height: fit-content;
-    align-self: center;
+.link-botao img {
+    width: 24px;
+    height: 24px;
 }
 
-
-#usuario-link-botao{
-    display: inline-block;
-}
-
-
-
-#usuario-link-botao .icone-usuario-link-botao{
+/* Estilos para o menu de navegação */
+.menu-navegacao {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+#mennav-caixa {
+    display: flex;
     align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.mennav-link {
+    position: relative;
+}
+
+.mennav-link-btn {
+    color: white;
+    font-size: 16px;
+    background: none;
     cursor: pointer;
 }
 
-
-
-#loja-link-botao .icone-usuario-link-botao, #info-link-botao .icone-usuario-link-botao{
-    cursor: pointer;
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    z-index: 10;
 }
 
-
-
-#logo-braverso{
-    width: 40%;
-    height: 70%;
+.mennav-link:hover .menu-dropdown {
+    display: block;
 }
 
-
-#bandeira-brasileira{
-    width: 20%;
-    height: 50%;
-    align-self: center;
+.link-to-missao {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
 }
 
-
-
-
-
-
-@media (min-width: 1024px){ /* ipad */
-    .menu-navegacao{
-        margin-top: 50px;
-    }
+.link-to-missao:hover {
+    background-color: #555;
 }
 
-@media (min-width: 1400px){ /* laptop */
-    body{
-        background-size: 30%;
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        background-size: contain; 
+        background-position: top center;
     }
 
-    #bandeira-brasileira{
-        width: 20%;
-        height: 35%;
-    }
-}
-
-@media (min-width: 1600px){ /* desktop */
-    body{
-        background-size: 30%;
-    }
-    .menu-navegacao{
-        margin-top: 120px;
+    #caixa-superior {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
     }
 
-    #menu-superior{
+    #caixa-user-img {
+        flex-direction: row;
         gap: 10px;
     }
 
+    #menu-superior {
+        justify-content: flex-end;
+        gap: 15px;
+    }
+
+    .menu-navegacao {
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #mennav-caixa {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .span-divisor {
+        display: inline; 
+    }
 }
 
+@media (min-width: 1200px) {
+    body {
+        background-size: 50%; 
+        background-position: right center;
+    }
 
+    #caixa-superior {
+        padding: 20px 50px;
+    }
+
+    #menu-superior {
+        gap: 40px; 
+    }
+
+    #mennav-caixa {
+        gap: 20px;
+    }
+}

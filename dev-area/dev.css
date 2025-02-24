@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Koulen', sans-serif;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../src/assets/images/lua.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+}
+
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para o cabeçalho */
+#caixa-superior{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+
+#caixa-user-img{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#bandeira-brasileira {
+    width: 50px;
+    height: auto;
+}
+
+#logo-braverso {
+    width: 150px;
+    height: auto;
+}
+
+#menu-superior{
+    display: flex;
+    gap: 20px;
+}
+
+.link-botao img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Estilos para o menu de navegação */
+.menu-navegacao {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+#mennav-caixa {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.mennav-link {
+    position: relative;
+}
+
+.mennav-link-btn {
+    color: white;
+    font-size: 16px;
+    background: none;
+    cursor: pointer;
+}
+
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+}
+
+.mennav-link:hover .menu-dropdown {
+    display: block;
+}
+
+.link-to-missao {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+.link-to-missao:hover {
+    background-color: #555;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        background-size: contain; 
+        background-position: top center;
+    }
+
+    #caixa-superior {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    #caixa-user-img {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    #menu-superior {
+        justify-content: flex-end;
+        gap: 15px;
+    }
+
+    .menu-navegacao {
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #mennav-caixa {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .span-divisor {
+        display: inline; 
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        background-size: 50%; 
+        background-position: right center;
+    }
+
+    #caixa-superior {
+        padding: 20px 50px;
+    }
+
+    #menu-superior {
+        gap: 40px; 
+    }
+
+    #mennav-caixa {
+        gap: 20px;
+    }
+}

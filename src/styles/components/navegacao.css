@@ -80,9 +80,44 @@
 }
 
 .link-to-missao:hover{
-    background-color: rgb(13, 13, 13);
-    transform: scale(1.2);
+    background-color: #555;
+    cursor: pointer;
 }
+
+
+@keyframes fadeIn { /* animação */
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn { /* animação */
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.mennav-link-btn { /* animação */
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.menu-navegacao { /* animação */
+    animation: slideIn 1s ease-in-out;
+}
+
+
+
+
 
 @media(max-width: 320px){ /* pequenos celulares */
     .mennav-link, .span-divisor{

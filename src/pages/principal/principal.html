@@ -14,47 +14,53 @@
 </head>
 <body>
 
-    <main >
-        <div id="caixa-superior">
-            <div id="caixa-user-img">
-                <img id="bandeira-brasileira" src="../../assets/images/bandeira-brasileira.png" alt="">
-                <img id="logo-braverso" src="../../assets/images/light-logo-inteira.png" alt="">
-                <a id="usuario-link-botao" class="link-botao" href="../../pages/userpag/userpag.html"><button><img class="icone-usuario-link-botao" src="../../assets/images/user-icon-1.png" alt=""></button></a>
-            </div>
-            <nav id="menu-superior">
-                <a id="loja-link-botao" class="link-botao" href="../../pages/vendas/vendas.html"><button><img class="icone-usuario-link-botao" src="../../assets/images/adicionar-produto 1.png" alt=""></button></a>
-                <a id="info-link-botao" class="link-botao" href="../../pages/guia/guia.html"><button><img class="icone-usuario-link-botao" src="../../assets/images/info 1.png" alt=""></button></a>
-            </nav>
+    <!-- Cabeçalho -->
+    <header id="caixa-superior">
+        <div id="caixa-user-img">
+            <img id="bandeira-brasileira" src="../../assets/images/bandeira-brasileira.png" alt="Bandeira do Brasil">
+            <img id="logo-braverso" src="../../assets/images/light-logo-inteira.png" alt="Logo da Braverso">
         </div>
-
-        <nav class="menu-navegacao">
-            <div id="mennav-caixa">
-                <h2>TELA INICIAL</h2>
-
-                <span class="span-divisor">|</span>
-                <div>
-                    <div class="mennav-link" id="mennav-link-to-missao">
-                        <button class="mennav-link-btn">Missão</button>
-                        <img src="../../assets/images/dropdown.png" alt="">
-                        <div class="menu-dropdown" id="menu-dropdown-missao">
-                            <a href="../missaodpedro/missaodpedro.html" id="link-to-missao-1" class="link-to-missao">Missão 1</a>
-                            <a href="../missaoisabel/missaoisabel.html" id="link-to-missao-2" class="link-to-missao">Missão 2</a>
-                        </div>
-                    </div>
-
-                </div>
-
-                <span class="span-divisor">|</span>
-
-                <a href="../engenharia/engenharia.html" class="mennav-link" id="mennav-link-to-engenharia"><button class="mennav-link-btn">Engenharia</button></a>
-
-                <span class="span-divisor">|</span>
-
-                <a href="../sobre/sobre.html" class="mennav-link" id="mennav-link-to-sobre"><button class="mennav-link-btn">Sobre</button></a>
-            </div>
+        <nav id="menu-superior">
+            <a id="usuario-link-botao" class="link-botao" href="../../pages/userpag/userpag.html">
+                <button aria-label="Página do usuário">
+                    <img class="icone-usuario-link-botao" src="../../assets/images/user-icon-1.png" alt="Ícone do usuário">
+                </button>
+            </a>
+            <a id="loja-link-botao" class="link-botao" href="../../pages/vendas/vendas.html">
+                <button aria-label="Página de vendas">
+                    <img class="icone-usuario-link-botao" src="../../assets/images/adicionar-produto 1.png" alt="Ícone de loja">
+                </button>
+            </a>
+            <a id="info-link-botao" class="link-botao" href="../../pages/guia/guia.html">
+                <button aria-label="Página de informações">
+                    <img class="icone-usuario-link-botao" src="../../assets/images/info 1.png" alt="Ícone de informações">
+                </button>
+            </a>
         </nav>
-    </main>
+    </header>
 
+    <nav class="menu-navegacao">
+        <div id="mennav-caixa">
+            <h2>TELA INICIAL</h2>
+            <span class="span-divisor">|</span>
+            <div class="mennav-link" id="mennav-link-to-missao">
+                <button class="mennav-link-btn">Missão</button>
+                <img src="../../assets/images/dropdown.png" alt="Ícone de dropdown">
+                <div class="menu-dropdown" id="menu-dropdown-missao">
+                    <a href="../missaodpedro/missaodpedro.html" class="link-to-missao">Missão 1</a>
+                    <a href="../missaoisabel/missaoisabel.html" class="link-to-missao">Missão 2</a>
+                </div>
+            </div>
+            <span class="span-divisor">|</span>
+            <a href="../engenharia/engenharia.html" class="mennav-link">
+                <button class="animated-button" class="mennav-link-btn">Engenharia</button>
+            </a>
+            <span class="span-divisor">|</span>
+            <a href="../sobre/sobre.html" class="mennav-link">
+                <button class="animated-button" class="mennav-link-btn">Sobre</button>
+            </a>
+        </div>
+    </nav>
 
     <script src="principal.js"></script>
 </body>
