@@ -23,13 +23,13 @@ body{
     max-width: 500px;
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(255,255,255,0.2);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
     animation: aparecer 0.6s ease-out;
-    color: black;
+    color: white;
 }
 
 .container-form h1, .grupo-form label{
-    color: black;
+    color: white;
 }
 
 @keyframes aparecer {
@@ -71,6 +71,8 @@ input, select, textarea {
     border-radius: 8px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
 }
 
 input:focus, select:focus, textarea:focus {
@@ -133,9 +135,8 @@ textarea {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
     border-radius: 10px;
-    background-color: #f9f9f9;
+    background-color: rgba(255, 255, 255, 0.0.9);
 }
 
 .grupo-form {

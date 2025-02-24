@@ -15,7 +15,7 @@ body {
 }
 
 .forma1 {
-    background: rgba(255, 255, 255, 0.0.9); 
+    background-color: rgba(255, 255, 255, 0.0.9); 
     backdrop-filter: blur(1px); 
     padding: 25px;
     border-radius: 12px;
@@ -101,6 +101,27 @@ select.input-3 option {
 #alterar { background-color: #FFC107; color: black; }
 #excluir { background-color: #f44336; }
 #cadastrar { background-color: #2196F3; }
+
+.input-3 {
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.input-3.invalido {
+    border-color: red;
+}
+
+.mensagem-erro {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+.mensagem-erro.visivel {
+    display: block;
+}
 
 /* Responsividade */
 @media (max-width: 600px) {
