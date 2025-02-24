@@ -25,6 +25,11 @@ body{
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(255,255,255,0.2);
     animation: aparecer 0.6s ease-out;
+    color: black;
+}
+
+.container-form h1, .grupo-form label{
+    color: black;
 }
 
 @keyframes aparecer {
@@ -62,7 +67,7 @@ input, select, textarea {
     color: #000000;
     width: 100%;
     padding: 0.8rem;
-    border: 2px solid z#d8d8d8;
+    border: 2px solid #d8d8d8;
     border-radius: 8px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
@@ -120,6 +125,95 @@ textarea {
 .botao-cadastrar:hover { background: #27ae60; }
 .botao-alterar:hover { background: #f39c12; }
 .botao-excluir:hover { background: #c0392b; }
+
+
+
+
+.container-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.grupo-form {
+    margin-bottom: 15px;
+}
+
+.grupo-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.grupo-form input, .grupo-form select, .grupo-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.grupo-form input:focus, .grupo-form select:focus, .grupo-form textarea:focus {
+    border-color: #66afe9;
+    outline: none;
+}
+
+.botao-principal {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botao-principal:hover {
+    background-color: #45a049;
+}
+
+.grupo-botoes {
+    margin-top: 20px;
+}
+
+.botao {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.botao-cadastrar {
+    background-color: #008CBA;
+    color: white;
+}
+
+.botao-alterar {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+.botao-excluir {
+    background-color: #d9534f;
+    color: white;
+}
+
+.mensagem-erro {
+    color: red;
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
 
 @media (max-width: 480px) {
     .container-form {

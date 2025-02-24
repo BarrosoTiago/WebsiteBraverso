@@ -10,20 +10,23 @@
     <div class="container-form">
         <h1>Cadastro para eventos</h1>
         
-        <form class="formulario">
+        <form id="caixa-form">
             <div class="grupo-form">
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" required>
+                <input type="text" id="nome" class="required">
+                <span class="mensagem-erro" id="erro-nome"></span>
             </div>
 
             <div class="grupo-form">
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" required>
+                <input type="email" id="email" class="required">
+                <span class="mensagem-erro" id="erro-email"></span>
             </div>
 
             <div class="grupo-form">
                 <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" required>
+                <input type="tel" id="telefone" class="required">
+                <span class="mensagem-erro" id="erro-telefone"></span>
             </div>
 
             <div class="grupo-form">
@@ -50,6 +53,53 @@
             </div>
         </form>
     </div>
+
+    <script>
+        document.getElementById('caixa-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            let nome = document.getElementById('nome');
+            let email = document.getElementById('email');
+            let telefone = document.getElementById('telefone');
+            let valido = true;
+
+            // Validação do Nome
+            if (nome.value.trim() === '') {
+                nome.style.borderColor = 'red';
+                document.getElementById('erro-nome').textContent = 'Nome é obrigatório.';
+                valido = false;
+            } else {
+                nome.style.borderColor = '';
+                document.getElementById('erro-nome').textContent = '';
+            }
+
+            // Validação do E-mail
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email.value)) {
+                email.style.borderColor = 'red';
+                document.getElementById('erro-email').textContent = 'E-mail inválido.';
+                valido = false;
+            } else {
+                email.style.borderColor = '';
+                document.getElementById('erro-email').textContent = '';
+            }
+
+            // Validação do Telefone
+            const telefoneRegex = /^\d{10,11}$/;
+            if (!telefoneRegex.test(telefone.value)) {
+                telefone.style.borderColor = 'red';
+                document.getElementById('erro-telefone').textContent = 'Telefone inválido (deve ter 10 ou 11 dígitos).';
+                valido = false;
+            } else {
+                telefone.style.borderColor = '';
+                document.getElementById('erro-telefone').textContent = '';
+            }
+
+            // Se todos os campos estiverem válidos
+            if (valido) {
+                alert('Cadastro realizado com sucesso!');
+                // Aqui você pode adicionar o código para enviar os dados para o servidor
+            }
+        });
+    </script>
 </body>
 </html>
-     
