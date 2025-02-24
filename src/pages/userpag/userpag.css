@@ -87,7 +87,6 @@ body{
 }
 
 
-
 body {
     background-repeat: no-repeat;
     background-image: url(../../assets/images/userpag-fundo.jpg);
@@ -202,6 +201,24 @@ body {
 .caixa-card button:hover{
     background-color: rgb(61, 156, 32);
 }
+
+.star{
+    animation: 20s ease-in-out Deriva;
+}
+
+@keyframes Deriva{
+    0%{
+        transform: scale(1);
+        filter: brightness(100%);
+        filter: blur(0%);
+    }
+    100%{
+        transform: scale(0.1);
+        filter: brightness(40%);
+        filter: blur(25%);
+    }
+}
+
 
 @media (min-width: 10px) and (max-width: 1000px) {
     .star{
