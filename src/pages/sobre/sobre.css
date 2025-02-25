@@ -199,7 +199,7 @@ footer{
     }
 }
 
-@media(min-width: 2560px) and (max-width: 3000px){
+@media(min-width: 2560px) and (max-width: 5000px){
     .menu-navegacao{
         margin: initial;
         margin-top: 3%;
@@ -224,6 +224,8 @@ footer{
         padding: initial;
         margin-left: 5%;
         margin-top: 1%;
-
     }
 }
+
+
+

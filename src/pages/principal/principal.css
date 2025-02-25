@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Koulen', sans-serif;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../assets/images/lua.gif);
     background-size: cover;
@@ -20,14 +20,14 @@ body{
     overflow: hidden;
 }
 
-button{
+button {
     background: none;
     border: none;
     cursor: pointer;
 }
 
 /* Estilos para o cabeçalho */
-#caixa-superior{
+#caixa-superior {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,7 +36,7 @@ button{
     width: 100%;
 }
 
-#caixa-user-img{
+#caixa-user-img {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -52,7 +52,7 @@ button{
     height: auto;
 }
 
-#menu-superior{
+#menu-superior {
     display: flex;
     gap: 20px;
 }
@@ -118,46 +118,80 @@ button{
 /* Responsividade */
 @media (max-width: 768px) {
     body {
-        background-size: contain; 
+        background-size: contain;
         background-position: top center;
     }
 
     #caixa-superior {
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         gap: 10px;
         padding: 10px;
     }
 
     #caixa-user-img {
-        flex-direction: row;
+        flex-direction: column;
         gap: 10px;
     }
 
     #menu-superior {
-        justify-content: flex-end;
+        justify-content: center;
         gap: 15px;
     }
 
     .menu-navegacao {
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         padding: 10px;
     }
 
     #mennav-caixa {
-        flex-direction: row;
+        flex-direction: column;
         gap: 10px;
     }
 
     .span-divisor {
-        display: inline; 
+        display: none;
+    }
+
+    .mennav-link-btn {
+        font-size: 14px;
+    }
+
+    .menu-dropdown {
+        position: static;
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mennav-link:hover .menu-dropdown {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+    body {
+        background-size: 75%;
+        background-position: right center;
+    }
+
+    #caixa-superior {
+        padding: 15px 30px;
+    }
+
+    #menu-superior {
+        gap: 30px;
+    }
+
+    #mennav-caixa {
+        gap: 15px;
     }
 }
 
 @media (min-width: 1200px) {
     body {
-        background-size: 50%; 
+        background-size: 50%;
         background-position: right center;
     }
 
@@ -166,10 +200,62 @@ button{
     }
 
     #menu-superior {
-        gap: 40px; 
+        gap: 40px;
     }
 
     #mennav-caixa {
         gap: 20px;
+    }
+}
+
+/* Ajustes para telas grandes (a partir de 2560px) */
+@media (min-width: 2560px) {
+    body {
+        font-size: 1.5rem; /* Aumenta o tamanho da fonte geral */
+    }
+
+    #caixa-superior {
+        padding: 30px 100px; /* Aumenta o padding */
+    }
+
+    #bandeira-brasileira {
+        width: 80px; /* Aumenta o tamanho da bandeira */
+    }
+
+    #logo-braverso {
+        width: 250px; /* Aumenta o tamanho do logo */
+    }
+
+    .link-botao img {
+        width: 36px; /* Aumenta o tamanho dos ícones */
+        height: 36px;
+    }
+
+    .menu-navegacao {
+        margin-top: 40px; /* Aumenta o espaçamento */
+    }
+
+    .mennav-link-btn {
+        font-size: 24px; /* Aumenta o tamanho da fonte dos botões */
+    }
+
+    .menu-dropdown {
+        padding: 20px; /* Aumenta o padding do dropdown */
+    }
+
+    .link-to-missao {
+        font-size: 20px; /* Aumenta o tamanho da fonte dos links do dropdown */
+    }
+
+    .mennav-link{
+        font-size: 30px;
+    }
+
+    #mennav-caixa {
+        gap: 30px; /* Aumenta o espaçamento entre os elementos */
+    }
+
+    h2 {
+        font-size: 2rem; /* Aumenta o tamanho do título "TELA INICIAL" */
     }
 }

@@ -110,6 +110,7 @@ body {
     background: url('espaco.jpg') no-repeat center/cover;
     padding: 50px 20px;
     text-align: left;
+    font-size: 1.5rem;
 }
 
 
@@ -193,13 +194,15 @@ body {
 
 .caixa-card:hover{
     background-color: #000;
-    transition: 0.5s;
+    transition: 0.5s ease-in-out;
     transform: scale(1.1)
 
 }
 
 .caixa-card button:hover{
-    background-color: rgb(61, 156, 32);
+    background-color: rgb(51, 129, 27);
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
 }
 
 .star{
@@ -226,7 +229,7 @@ body {
     } 
 }
 
-@media (min-width: 2560px) and (max-width: 3000px){
+@media (min-width: 2560px) and (max-width: 3840px){
 
     .star{
         width: 30%;
@@ -279,3 +282,4 @@ body {
     }
 
 }
+
